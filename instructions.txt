@@ -1,0 +1,5 @@
+itmdump /tmp/itm.fifo
+#check .dgbinit
+openocd -f interface/stlink-v2.cfg -f target/stm32f3x.cfg
+xargo build --target thumbv7em-none-eabihf
+arm-none-eabi-gdb -q target/thumbv7em-none-eabihf/debug/foo

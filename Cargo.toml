@@ -1,0 +1,10 @@
+[package]
+name = "foo"
+version = "0.1.0"
+authors = ["trionprog <trionprog@gmail.com>"]
+
+[dependencies]
+f3 = { path = "../f3" }
+
+[profile.release]
+lto = true
