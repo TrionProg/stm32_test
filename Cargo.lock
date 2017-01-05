@@ -66,11 +66,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "stm32"
 version = "0.1.0"
+dependencies = [
+ "volatile-register 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
 [[package]]
 name = "stm32f30x-memory-map"
 version = "0.1.0"
 dependencies = [
+ "stm32 0.1.0",
  "volatile-register 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
